@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Shashidhar Akhil Aithal",
-  title: "Hello, I'm Akhil A",
+  title: "Hello, I'm Akhil",
   subTitle: emoji(
     "An Electrical Engineer driven by hands-on hardware innovation and complex problem solving. With more than four years of professional experience, I specialize in circuit and PCB design, laboratory instrumentation and embedded programming (C/C++ and Python). I thrive in challenging environments that demand conceptual thinking, rapid prototyping and continuous learning - especially where technology shapes the future."
   ),
