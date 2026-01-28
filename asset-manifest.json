@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.3d89564e.css",
+    "main.js": "/Portfolio/static/js/main.e90a60d8.js",
+    "static/css/487.bb36206c.chunk.css": "/Portfolio/static/css/487.bb36206c.chunk.css",
+    "static/js/487.9779af71.chunk.js": "/Portfolio/static/js/487.9779af71.chunk.js",
+    "static/css/990.c6a7ee28.chunk.css": "/Portfolio/static/css/990.c6a7ee28.chunk.css",
+    "static/js/990.3ff8cbd3.chunk.js": "/Portfolio/static/js/990.3ff8cbd3.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/unistuttgart_logo.jpg": "/Portfolio/static/media/unistuttgart_logo.1b08853dc99acf2f1cf1.jpg",
+    "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/Shashidhar_Akhil_Aithal_CV.pdf": "/Portfolio/static/media/Shashidhar_Akhil_Aithal_CV.bc3f331f30c5c96d80ec.pdf",
+    "static/media/Nordic_Semiconductor_Logo.png": "/Portfolio/static/media/Nordic_Semiconductor_Logo.e994c52f8139fac4907d.png",
+    "static/media/manOnTable.svg": "/Portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/ILH_Logo.png": "/Portfolio/static/media/ILH_Logo.bcb41f53e2168074d332.png",
+    "static/media/BMS-College-of-Engineering-Bangalore.png": "/Portfolio/static/media/BMS-College-of-Engineering-Bangalore.d2679a3f42188241db89.png",
+    "static/media/Bosch_Logo.png": "/Portfolio/static/media/Bosch_Logo.ad825f797607d671627b.png",
+    "static/media/contactMailDark.svg": "/Portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/Portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/BGSW_Logo.png": "/Portfolio/static/media/BGSW_Logo.4dbc6db4ee820334a657.png",
+    "static/media/Product_Iternation.svg": "/Portfolio/static/media/Product_Iternation.34c65a923decab9996782f941dba5b98.svg",
+    "static/media/Suntrop_Logo.png": "/Portfolio/static/media/Suntrop_Logo.8347d506bbf7febfda56.png",
+    "static/media/Bosch_Invented_for_Life_Logo.jpg": "/Portfolio/static/media/Bosch_Invented_for_Life_Logo.7afa6f9bb5a58eee88c3.jpg",
+    "static/media/saayaHealthLogo.webp": "/Portfolio/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
+    "static/media/nextuLogo.webp": "/Portfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
+    "index.html": "/Portfolio/index.html",
+    "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.3d89564e.css.map": "/Portfolio/static/css/main.3d89564e.css.map",
+    "main.e90a60d8.js.map": "/Portfolio/static/js/main.e90a60d8.js.map",
+    "487.bb36206c.chunk.css.map": "/Portfolio/static/css/487.bb36206c.chunk.css.map",
+    "487.9779af71.chunk.js.map": "/Portfolio/static/js/487.9779af71.chunk.js.map",
+    "990.c6a7ee28.chunk.css.map": "/Portfolio/static/css/990.c6a7ee28.chunk.css.map",
+    "990.3ff8cbd3.chunk.js.map": "/Portfolio/static/js/990.3ff8cbd3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d89564e.css",
+    "static/js/main.e90a60d8.js"
+  ]
+}
