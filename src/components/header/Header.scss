@@ -61,8 +61,10 @@
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Lucida Console";
+  text-transform: uppercase;  /* This forces ALL CAPS */
   font-weight: bold;
+  font-size: 2rem; /* or 32px, 40px, etc. */
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;

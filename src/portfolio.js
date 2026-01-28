@@ -10,36 +10,32 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 600 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Shashidhar Akhil Aithal",
+  title: "Hello, I'm Akhil",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "An Electrical Engineer driven by hands-on hardware innovation and complex problem solving. With more than four years of professional experience, I specialize in circuit and PCB design, laboratory instrumentation and embedded programming (C/C++ and Python). I thrive in challenging environments that demand conceptual thinking, rapid prototyping and continuous learning - especially where technology shapes the future."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/12SE92O0PdW6NnkChS4dDJaFuTX8dEdli/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  linkedin: "https://www.linkedin.com/in/akhil-aithal/",
+  gmail: "akhil.aithal@outlook.com",
+  github: "https://github.com/akhilaithal",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,73 +45,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "PASSIONATE ELECTRICAL ENGINEER LOOKING TO MAKE AN IMPACT",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Design, Simulate and Test mixed-signal circuits for embedded systems"),
+    emoji("⚡ From Prototype to Series production — end-to-end product delivery"),
+    emoji("⚡ Translate top-level requirements into reliable hardware solutions"), 
+    emoji("⚡ Implement Test Automation to improve efficiency and repeatability"),
+    emoji("⚡ Ensure compliance with industry standards and best practices")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
-
+  
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +68,37 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      schoolName: "Universität Stuttgart",
+      logo: require("./assets/images/unistuttgart_logo.jpg"),
+      subHeader: "Master of Science in Electrical Engineering",
+      duration: "October 2022 - March 2025",
+      grade: "Grade : 2.0",
+      desc1: "Master Thesis: Investigation of Modular Fabrication of Large-Area Passive RF Components",
+      desc1Bullets: [
+        "Developed passive RF components using a hybrid fabrication approach that combined cleanroom-based lithography with additive printing techniques to enable modular design modifications.",
+        "Simulated, fabricated, and tested RF structures, incorporating printed sections to explore their impact on frequency response and evaluate the feasibility of combining traditional and modern manufacturing methods."
+      ],
+      desc2: "Research Project: Packaging of Integrated Circuits on Glass Substrates",
+      desc2Bullets: [
+        "Fabricated thin film test structures in a cleanroom using photolithography on glass substrates, incorporating various pad sizes and materials to evaluate interconnect techniques.",
+        "Developed and tested electrical bonding methods using different adhesives mixed with gold spacers, followed by systematic reliability and electrical stress testing across multiple sample configurations."
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "B.M.S. College of Engineering",
+      logo: require("./assets/images/BMS-College-of-Engineering-Bangalore.png"),
+      subHeader: "Bachelor of Engineering in Electronics and Instrumentation",
+      duration: "August 2016 - August 2020",
+      grade: "CGPA : 8.87",
+      desc1: "Bachelor Thesis: Lightweight Indoor Mobility Solution",
+      desc1Bullets: [
+        "Autonomous pick and place robot with advanced Computer Vision algorithm for navigation and obstacle avoidance. Designed and optimized to operate in an indoor environment."
+      ],
+      /*desc2: "Participated in the research of XXX and published 3 papers.",
+      desc2Bullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]*/
     }
   ]
 };
@@ -153,16 +109,36 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "PCB Design", //Insert stack or technology you have experience in
+      progressPercentage: "75%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Hardware Prototyping",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Laboratory Testing",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Circuit Design",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Simulation",
+      progressPercentage: "80%"
+    }, 
+    {
+      Stack: "Python",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "C/C++",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Soldering",
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -173,30 +149,69 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    /*
+     {
+      role: "Prototyping Engineer Intern",
+      company: "Bosch Sensortec GmbH",
+      companylogo: require("./assets/images/Bosch_Logo.png"),
+      date: "November 2025 – Present",
+      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
+    }, */
+    {
+      role: "Research Assistant",
+      company: "Institute of Robust Power Semiconductor Systems (ILH)",
+      companylogo: require("./assets/images/ILH_Logo.png"),
+      date: "January 2025 – March 2025",
+      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Performed RF and microwave port simulations using Keysight EMPro to analyze electromagnetic behavior of high-frequency structures",
+        "Supported design validation and performance evaluation through simulation-driven insights",
+        "Contributed to research-grade modeling workflows , improving confidence in early-stage hardware designs"
+      ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Working Student – Hardware & System Architecture",
+      company: "Robert Bosch GmbH",
+      companylogo: require("./assets/images/Bosch_Logo.png"),
+      date: "January 2024 – December 2024",
+      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Supported radar and next-generation automotive system development, contributing across hardware engineering and system architecture activities",
+        "Created and maintained hardware and system requirements with end-to-end traceability using IBM DOORS , ensuring alignment between design and system specifications",
+        "Provided hands-on laboratory support , including test sample preparation, validation, debugging, and circuit board bring-up",
+        "Automated data extraction, analysis, and reporting using Python and Splunk , reducing manual effort and improving engineering insight",
+        "Coordinated issue tracking, sprint planning, and cross-functional collaboration via JIRA , supporting efficient system integration"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Hardware Design Engineer",
+      company: "Bosch Global Software Technologies Pvt. Ltd.",
+      companylogo: require("./assets/images/BGSW_Logo.png"),
+      date: "January 2021 – September 2022",
+      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Designed and developed electronic modules for Fuel Cell Electric Vehicle (FCEV) applications , including Interlock systems, Low-Voltage DC-DC converters, CAN interfaces, and crash signal circuits",
+        "Executed end-to-end hardware development , covering circuit design, simulation, schematic review, and hardware testing",
+        "Automated test workflows using Python and enhanced reporting efficiency through VBA scripting , improving test repeatability and documentation quality",
+        "Owned module lifecycle management , including technical documentation, design reviews, and cross-team coordination",
+        "Led component procurement and traceability , contributing to improved cost efficiency and supply-chain visibility"
+      ]
+    },
+    {
+      role: "Hardware Prototyping Engineer Intern",
+      company: "SunTrop Solar Pvt. Ltd.",
+      companylogo: require("./assets/images/Suntrop_Logo.png"),
+      date: "June 2019 – July 2019",
+      //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Contributed to wireless sensor network (WSN) hardware development for agricultural monitoring applications",
+        "Supported hardware design, integration, and bench-level testing of prototype systems",
+        "Gained hands-on experience in debugging, rapid prototyping, and small-team engineering collaboration"
+      ]
     }
   ]
 };
@@ -206,7 +221,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -239,7 +254,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -252,51 +267,72 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "PCB Basic Design Course",
+      subtitle: "Certification for completion of PCB Basic Design Course from Altium Education",
+      image: require("./assets/images/Altium_Logo.jpg"),
+      imageAlt: "Altium Designer Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+        {name: "Certification", url: "https://drive.google.com/file/d/1lYakAXXHA-BZZQGnDy7t-jLRHdXMSfJV/view?usp=sharing"},
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Bluetooth Low Energy Fundamentals",
+      subtitle: "Certification for completion of Bluetooth Low Energy Fundamentals course from Nordic Semiconductor DevAcademy",
+      image: require("./assets/images/Nordic_Semiconductor_Logo.png"),
+      imageAlt: "Nordic Semiconductor Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "Certification", url: "https://drive.google.com/file/d/1mI0VCo2XSAKt8Vl5t57gLG75rvRuS0xX/view?usp=sharing"},
+      ]
+    },
+
+    {
+      title: "nRF Connect SDK Fundamentals",
+      subtitle: "Certification for completion of nRF Connect SDK Fundamentals course from Nordic Semiconductor DevAcademy",
+      image: require("./assets/images/Nordic_Semiconductor_Logo.png"),
+      imageAlt: "Nordic Semiconductor Logo",
+      footerLink: [
+        {name: "Certification", url: "https://drive.google.com/file/d/1U6Ed_Ko7t76RniJeswSp9HjgcuPc-wok/view?usp=sharing"},
+      ]
+    },
+    
+    {
+      title: "nRF Connect SDK Intermediate",
+      subtitle: "Certification for completion of nRF Connect SDK Intermediate course from Nordic Semiconductor DevAcademy",
+      image: require("./assets/images/Nordic_Semiconductor_Logo.png"),
+      imageAlt: "Nordic Semiconductor Logo",
+      footerLink: [
+        {name: "Certification", url: "https://drive.google.com/file/d/1bhOiJHSLvTDJP66BmDdUzwrccc5EIqEv/view?usp=sharing"},
+      ]
+    },
+
+    {
+      title: "Bravo Award",
+      subtitle: "Awarded to team for commitment and collaboration towards successful sample testing before deadline",
+      image: require("./assets/images/Bosch_Invented_for_Life_Logo.jpg"),
+      imageAlt: "Bosch Invented for Life Logo",
+      footerLink: [
+        {name: "Achievement", url: "https://drive.google.com/file/d/1QxMb_0FFPNG7tApVMRHpu1VY_jH1R0Xu/view?usp=sharing"},
+      ]
+    },
+
+    {
+      title: "Extra Miler Award",
+      subtitle: "Awarded for module testing and automation of test setups",
+      image: require("./assets/images/Bosch_Invented_for_Life_Logo.jpg"),
+      imageAlt: "Bosch Invented for Life Logo",
+      footerLink: [
+        {name: "Achievement", url: "https://drive.google.com/file/d/1dE8oCoJGnyEh65XcCB9BDWkVNSh9emvk/view?usp=sharing"},
+      ]
+    },
+
+    {
+      title: "Bravo Award",
+      subtitle: "Awarded for quick adaptation to project and commitment towards task completion",
+      image: require("./assets/images/Bosch_Invented_for_Life_Logo.jpg"),
+      imageAlt: "Bosch Invented for Life Logo",
+      footerLink: [
+        {name: "Achievement", url: "https://drive.google.com/file/d/15fLxC3S2_XP-0pWacgToPPTNqC6inp3I/view?usp=sharing"},
       ]
     }
   ],
@@ -324,7 +360,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +379,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +392,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -364,26 +400,25 @@ const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
 
-  // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  //subtitle:
+   // "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+49 176 87969695",
+  email_address: "akhil.aithal@outlook.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

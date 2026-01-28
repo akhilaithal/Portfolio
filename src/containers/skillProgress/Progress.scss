@@ -28,6 +28,7 @@
 }
 .skills-container {
   display: flex;
+  align-items: center;     /* This centers the image vertically against the skill bars */
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -37,10 +38,25 @@
   flex: 1;
   margin-bottom: 30px;
 }
+/* Old Image settings
 .skills-image > img {
   margin-left: 80px;
   max-width: 90%;
   height: auto;
+}*/
+
+.skills-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;                 /* Allows the image side to grow naturally */
+
+  img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    /* margin-left is removed to prevent lopsided centering */
+  }
 }
 
 /* Media Query */

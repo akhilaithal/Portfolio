@@ -54,10 +54,23 @@ export default function EducationCard({school}) {
               >
                 {school.duration}
               </p>
-              <p className="education-text-desc">{school.desc}</p>
-              <div className="education-text-bullets">
+              <p
+                className={`${
+                  isDark ? "dark-mode" : ""
+                } education-text-grade`}
+              >
+                {school.grade}
+              </p>
+              <p className="education-text-desc1">{school.desc1}</p>
+              <div className="education-text-bullets1">
                 <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
+                  <GetDescBullets descBullets={school.desc1Bullets} />
+                </ul>
+              </div>
+              <p className="education-text-desc2">{school.desc2}</p>
+              <div className="education-text-bullets2">
+                <ul>
+                  <GetDescBullets descBullets={school.desc2Bullets} />
                 </ul>
               </div>
             </div>
