@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3d89564e.css",
-    "main.js": "/Portfolio/static/js/main.7767bbe7.js",
+    "main.css": "/Portfolio/static/css/main.e1ac70d7.css",
+    "main.js": "/Portfolio/static/js/main.c3ae8633.js",
     "static/css/487.bb36206c.chunk.css": "/Portfolio/static/css/487.bb36206c.chunk.css",
     "static/js/487.9779af71.chunk.js": "/Portfolio/static/js/487.9779af71.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/Portfolio/static/css/990.c6a7ee28.chunk.css",
     "static/js/990.3ff8cbd3.chunk.js": "/Portfolio/static/js/990.3ff8cbd3.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/unistuttgart_logo.jpg": "/Portfolio/static/media/unistuttgart_logo.9eca0a56323e68611ddc.jpg",
     "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/Shashidhar_Akhil_Aithal_CV.pdf": "/Portfolio/static/media/Shashidhar_Akhil_Aithal_CV.bc3f331f30c5c96d80ec.pdf",
     "static/media/Nordic_Semiconductor_Logo.png": "/Portfolio/static/media/Nordic_Semiconductor_Logo.e994c52f8139fac4907d.png",
     "static/media/manOnTable.svg": "/Portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
-    "static/media/unistuttgart_logo.png": "/Portfolio/static/media/unistuttgart_logo.f2f06f3a93a6482a9059.png",
     "static/media/ILH_Logo.png": "/Portfolio/static/media/ILH_Logo.bcb41f53e2168074d332.png",
     "static/media/BMS-College-of-Engineering-Bangalore.png": "/Portfolio/static/media/BMS-College-of-Engineering-Bangalore.d2679a3f42188241db89.png",
     "static/media/Bosch_Logo.png": "/Portfolio/static/media/Bosch_Logo.ad825f797607d671627b.png",
@@ -25,15 +25,15 @@
     "static/media/nextuLogo.webp": "/Portfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/Portfolio/index.html",
     "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.3d89564e.css.map": "/Portfolio/static/css/main.3d89564e.css.map",
-    "main.7767bbe7.js.map": "/Portfolio/static/js/main.7767bbe7.js.map",
+    "main.e1ac70d7.css.map": "/Portfolio/static/css/main.e1ac70d7.css.map",
+    "main.c3ae8633.js.map": "/Portfolio/static/js/main.c3ae8633.js.map",
     "487.bb36206c.chunk.css.map": "/Portfolio/static/css/487.bb36206c.chunk.css.map",
     "487.9779af71.chunk.js.map": "/Portfolio/static/js/487.9779af71.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/Portfolio/static/css/990.c6a7ee28.chunk.css.map",
     "990.3ff8cbd3.chunk.js.map": "/Portfolio/static/js/990.3ff8cbd3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d89564e.css",
-    "static/js/main.7767bbe7.js"
+    "static/css/main.e1ac70d7.css",
+    "static/js/main.c3ae8633.js"
   ]
 }
