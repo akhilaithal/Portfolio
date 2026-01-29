@@ -33,7 +33,9 @@ export default function StackProgress() {
             ) : (
               <img
                 alt="Skills"
-                src={require("../../assets/images/Product_Iternation.svg").default}
+                src={
+                  require("../../assets/images/Product_Iternation.svg").default
+                }
               />
             )}
           </div>

@@ -77,9 +77,9 @@
   overflow: hidden;
   white-space: nowrap;
   */
-  white-space: normal;       /* Allows text to wrap to the next line */
-  overflow: visible;         /* Ensures the wrapped text isn't hidden */
-  text-overflow: clip;       /* Removes the "..." dots */
+  white-space: normal; /* Allows text to wrap to the next line */
+  overflow: visible; /* Ensures the wrapped text isn't hidden */
+  text-overflow: clip; /* Removes the "..." dots */
 }
 
 .experience-roundedimg {

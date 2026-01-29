@@ -47,18 +47,25 @@ const skillsSection = {
   title: "What I do",
   subTitle: "PASSIONATE ELECTRICAL ENGINEER LOOKING TO MAKE AN IMPACT",
   skills: [
-    emoji("⚡ Design, Simulate and Test mixed-signal circuits for embedded systems"),
-    emoji("⚡ From Prototype to Series production — end-to-end product delivery"),
-    emoji("⚡ Translate top-level requirements into reliable hardware solutions"), 
-    emoji("⚡ Implement Test Automation to improve efficiency and repeatability"),
+    emoji(
+      "⚡ Design, Simulate and Test mixed-signal circuits for embedded systems"
+    ),
+    emoji(
+      "⚡ From Prototype to Series production — end-to-end product delivery"
+    ),
+    emoji(
+      "⚡ Translate top-level requirements into reliable hardware solutions"
+    ),
+    emoji(
+      "⚡ Implement Test Automation to improve efficiency and repeatability"
+    ),
     emoji("⚡ Ensure compliance with industry standards and best practices")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
-  
-  softwareSkills: [
-  ],
+
+  softwareSkills: [],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -73,12 +80,14 @@ const educationInfo = {
       subHeader: "Master of Science in Electrical Engineering",
       duration: "October 2022 - March 2025",
       grade: "Grade : 2.0",
-      desc1: "Master Thesis: Investigation of Modular Fabrication of Large-Area Passive RF Components",
+      desc1:
+        "Master Thesis: Investigation of Modular Fabrication of Large-Area Passive RF Components",
       desc1Bullets: [
         "Developed passive RF components using a hybrid fabrication approach that combined cleanroom-based lithography with additive printing techniques to enable modular design modifications.",
         "Simulated, fabricated, and tested RF structures, incorporating printed sections to explore their impact on frequency response and evaluate the feasibility of combining traditional and modern manufacturing methods."
       ],
-      desc2: "Research Project: Packaging of Integrated Circuits on Glass Substrates",
+      desc2:
+        "Research Project: Packaging of Integrated Circuits on Glass Substrates",
       desc2Bullets: [
         "Fabricated thin film test structures in a cleanroom using photolithography on glass substrates, incorporating various pad sizes and materials to evaluate interconnect techniques.",
         "Developed and tested electrical bonding methods using different adhesives mixed with gold spacers, followed by systematic reliability and electrical stress testing across multiple sample configurations."
@@ -93,7 +102,7 @@ const educationInfo = {
       desc1: "Bachelor Thesis: Lightweight Indoor Mobility Solution",
       desc1Bullets: [
         "Autonomous pick and place robot with advanced Computer Vision algorithm for navigation and obstacle avoidance. Designed and optimized to operate in an indoor environment."
-      ],
+      ]
       /*desc2: "Participated in the research of XXX and published 3 papers.",
       desc2Bullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -127,7 +136,7 @@ const techStack = {
     {
       Stack: "Simulation",
       progressPercentage: "80%"
-    }, 
+    },
     {
       Stack: "Python",
       progressPercentage: "70%"
@@ -268,51 +277,71 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "PCB Basic Design Course",
-      subtitle: "Certification for completion of PCB Basic Design Course from Altium Education",
+      subtitle:
+        "Certification for completion of PCB Basic Design Course from Altium Education",
       image: require("./assets/images/Altium_Logo.jpg"),
       imageAlt: "Altium Designer Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1lYakAXXHA-BZZQGnDy7t-jLRHdXMSfJV/view?usp=sharing"},
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1lYakAXXHA-BZZQGnDy7t-jLRHdXMSfJV/view?usp=sharing"
+        }
       ]
     },
 
     {
       title: "Bluetooth Low Energy Fundamentals",
-      subtitle: "Certification for completion of Bluetooth Low Energy Fundamentals course from Nordic Semiconductor DevAcademy",
+      subtitle:
+        "Certification for completion of Bluetooth Low Energy Fundamentals course from Nordic Semiconductor DevAcademy",
       image: require("./assets/images/Nordic_Semiconductor_Logo.png"),
       imageAlt: "Nordic Semiconductor Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1mI0VCo2XSAKt8Vl5t57gLG75rvRuS0xX/view?usp=sharing"},
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1mI0VCo2XSAKt8Vl5t57gLG75rvRuS0xX/view?usp=sharing"
+        }
       ]
     },
 
     {
       title: "nRF Connect SDK Fundamentals",
-      subtitle: "Certification for completion of nRF Connect SDK Fundamentals course from Nordic Semiconductor DevAcademy",
+      subtitle:
+        "Certification for completion of nRF Connect SDK Fundamentals course from Nordic Semiconductor DevAcademy",
       image: require("./assets/images/Nordic_Semiconductor_Logo.png"),
       imageAlt: "Nordic Semiconductor Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1U6Ed_Ko7t76RniJeswSp9HjgcuPc-wok/view?usp=sharing"},
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1U6Ed_Ko7t76RniJeswSp9HjgcuPc-wok/view?usp=sharing"
+        }
       ]
     },
-    
+
     {
       title: "nRF Connect SDK Intermediate",
-      subtitle: "Certification for completion of nRF Connect SDK Intermediate course from Nordic Semiconductor DevAcademy",
+      subtitle:
+        "Certification for completion of nRF Connect SDK Intermediate course from Nordic Semiconductor DevAcademy",
       image: require("./assets/images/Nordic_Semiconductor_Logo.png"),
       imageAlt: "Nordic Semiconductor Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1bhOiJHSLvTDJP66BmDdUzwrccc5EIqEv/view?usp=sharing"},
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1bhOiJHSLvTDJP66BmDdUzwrccc5EIqEv/view?usp=sharing"
+        }
       ]
     },
 
     {
       title: "Bravo Award",
-      subtitle: "Awarded to team for commitment and collaboration towards successful sample testing before deadline",
+      subtitle:
+        "Awarded to team for commitment and collaboration towards successful sample testing before deadline",
       image: require("./assets/images/Bosch_Invented_for_Life_Logo.jpg"),
       imageAlt: "Bosch Invented for Life Logo",
       footerLink: [
-        {name: "Achievement", url: "https://drive.google.com/file/d/1QxMb_0FFPNG7tApVMRHpu1VY_jH1R0Xu/view?usp=sharing"},
+        {
+          name: "Achievement",
+          url: "https://drive.google.com/file/d/1QxMb_0FFPNG7tApVMRHpu1VY_jH1R0Xu/view?usp=sharing"
+        }
       ]
     },
 
@@ -322,17 +351,24 @@ const achievementSection = {
       image: require("./assets/images/Bosch_Invented_for_Life_Logo.jpg"),
       imageAlt: "Bosch Invented for Life Logo",
       footerLink: [
-        {name: "Achievement", url: "https://drive.google.com/file/d/1dE8oCoJGnyEh65XcCB9BDWkVNSh9emvk/view?usp=sharing"},
+        {
+          name: "Achievement",
+          url: "https://drive.google.com/file/d/1dE8oCoJGnyEh65XcCB9BDWkVNSh9emvk/view?usp=sharing"
+        }
       ]
     },
 
     {
       title: "Bravo Award",
-      subtitle: "Awarded for quick adaptation to project and commitment towards task completion",
+      subtitle:
+        "Awarded for quick adaptation to project and commitment towards task completion",
       image: require("./assets/images/Bosch_Invented_for_Life_Logo.jpg"),
       imageAlt: "Bosch Invented for Life Logo",
       footerLink: [
-        {name: "Achievement", url: "https://drive.google.com/file/d/15fLxC3S2_XP-0pWacgToPPTNqC6inp3I/view?usp=sharing"},
+        {
+          name: "Achievement",
+          url: "https://drive.google.com/file/d/15fLxC3S2_XP-0pWacgToPPTNqC6inp3I/view?usp=sharing"
+        }
       ]
     }
   ],
@@ -406,7 +442,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   //subtitle:
-   // "Discuss a project or just want to say hi? My Inbox is open for all.",
+  // "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+49 176 87969695",
   email_address: "akhil.aithal@outlook.com"
 };

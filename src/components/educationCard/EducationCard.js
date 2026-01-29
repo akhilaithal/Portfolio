@@ -55,9 +55,7 @@ export default function EducationCard({school}) {
                 {school.duration}
               </p>
               <p
-                className={`${
-                  isDark ? "dark-mode" : ""
-                } education-text-grade`}
+                className={`${isDark ? "dark-mode" : ""} education-text-grade`}
               >
                 {school.grade}
               </p>

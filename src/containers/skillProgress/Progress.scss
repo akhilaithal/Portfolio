@@ -28,7 +28,7 @@
 }
 .skills-container {
   display: flex;
-  align-items: center;     /* This centers the image vertically against the skill bars */
+  align-items: center; /* This centers the image vertically against the skill bars */
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;                 /* Allows the image side to grow naturally */
+  flex: 1; /* Allows the image side to grow naturally */
 
   img {
     max-width: 90%;
