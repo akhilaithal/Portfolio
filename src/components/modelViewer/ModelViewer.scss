@@ -1,0 +1,19 @@
+.model-container {
+  width: 100%;
+  height: 250px; // You can adjust this height to fit your project card
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  canvas {
+    outline: none; // Removes the border when clicking the 3D object
+  }
+}
+
+.model-loading-text {
+  color: #888;
+  font-family: inherit;
+  font-size: 14px;
+}

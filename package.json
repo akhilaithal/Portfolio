@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^8.20.2",
+    "@react-three/fiber": "^7.0.26",
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
@@ -17,7 +19,8 @@
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^16.10.2",
     "react-twitter-embed": "3.0.3",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "three": "^0.137.0"
   },
   "scripts": {
     "predeploy": "npm run build",
