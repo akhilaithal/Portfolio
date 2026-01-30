@@ -60,7 +60,7 @@ const Main = () => {
             <WorkExperience />
             <Education />
             <Projects />
-            
+
             {/* Suspense wraps the lazy-loaded 3D section */}
             <Suspense fallback={null}>
               <ManualProjects />

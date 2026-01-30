@@ -270,8 +270,9 @@ const bigProjects = {
 
 export const myProjects = {
   title: "My Projects 🚀",
-  subtitle: "Hardware designs, 3D renders, and technical prototypes I've developed!",
-  display: true 
+  subtitle:
+    "Hardware designs, 3D renders, and technical prototypes I've developed!",
+  display: true
 };
 
 // Achievement Section

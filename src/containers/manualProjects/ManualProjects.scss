@@ -3,12 +3,12 @@
 .main {
   /* Achievements likely uses the template's default padding. 
      We reset this to match exactly. */
-  padding-top: 10px; 
+  padding-top: 10px;
   padding-bottom: 30px;
 }
 
 #myProjects.main {
-  display: block; 
+  display: block;
   width: 100%;
 }
 
@@ -16,13 +16,13 @@
   width: 90%;
   margin: 0 auto;
   /* Reduced padding-top to remove that 'too much' feeling */
-  padding: 10px 10px; 
+  padding: 10px 10px;
 }
 
 .my-projects-header {
   text-align: left;
   /* Ensure no top margin is pushing the heading down */
-  margin-top: 0px; 
+  margin-top: 0px;
 }
 
 .projects-heading {
@@ -36,7 +36,7 @@
   text-transform: uppercase;
   margin: 0px;
   /* Reduced from 50px if it felt like too much space before the cards */
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   color: $subTitle;
 }
 

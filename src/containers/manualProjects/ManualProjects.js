@@ -7,7 +7,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function ManualProjects() {
   const {isDark} = useContext(StyleContext);
-  
+
   // Updated with your new name and description
   const projectsData = [
     {
@@ -22,31 +22,37 @@ export default function ManualProjects() {
   }
 
   return (
-  <Fade bottom duration={1000} distance="20px">
-    <div className="main" id="myProjects">
-      <div className="my-projects-main-div">
-        <div className="my-projects-header">
-          <h1 className={isDark ? "dark-mode heading projects-heading" : "heading projects-heading"}>
-            {myProjects.title}
-          </h1>
-          <p className={isDark ? "dark-mode subTitle projects-subtitle" : "subTitle projects-subtitle"}>
-            {myProjects.subtitle}
-          </p>
-        </div>
-        {/* Mirroring achievement-cards-div */}
-        <div className="projects-cards-div">
-          {projectsData.map((p, i) => {
-            return (
-              <ManualProjectCard
-                key={i}
-                isDark={isDark}
-                project={p}
-              />
-            );
-          })}
+    <Fade bottom duration={1000} distance="20px">
+      <div className="main" id="myProjects">
+        <div className="my-projects-main-div">
+          <div className="my-projects-header">
+            <h1
+              className={
+                isDark
+                  ? "dark-mode heading projects-heading"
+                  : "heading projects-heading"
+              }
+            >
+              {myProjects.title}
+            </h1>
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle projects-subtitle"
+                  : "subTitle projects-subtitle"
+              }
+            >
+              {myProjects.subtitle}
+            </p>
+          </div>
+          {/* Mirroring achievement-cards-div */}
+          <div className="projects-cards-div">
+            {projectsData.map((p, i) => {
+              return <ManualProjectCard key={i} isDark={isDark} project={p} />;
+            })}
+          </div>
         </div>
       </div>
-    </div>
-  </Fade>
-);
+    </Fade>
+  );
 }
