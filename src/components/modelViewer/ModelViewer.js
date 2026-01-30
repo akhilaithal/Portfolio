@@ -1,47 +1,99 @@
-import React, { Suspense } from "react";
-import { Canvas, useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OrbitControls, Center } from "@react-three/drei";
-import "./ModelViewer.scss"; // Importing the new stylesheet
+import React, { Suspense, useState, useEffect, useContext } from "react";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF, OrbitControls, Center, Preload, BakeShadows } from "@react-three/drei";
+import { useInView } from "react-intersection-observer";
+import StyleContext from "../../contexts/StyleContext"; // Import the context
 
-function Model({ url }) {
-  const gltf = useLoader(GLTFLoader, url);
-  // Try changing 1 to 50 or 100 if it's still small
-  return <primitive object={gltf.scene} scale={90} />; 
+// Import both versions of your fallback image
+import lightFallback from "../../assets/images/RP235x_light.png"; 
+import darkFallback from "../../assets/images/RP235x_dark.png"; 
+
+import "./ModelViewer.scss";
+
+function Model({ url, onModelLoad }) {
+  const { scene } = useGLTF(url, "https://www.gstatic.com/draco/versioned/decoders/1.5.5/");
+  
+  useEffect(() => {
+    if (scene) {
+      onModelLoad();
+    }
+  }, [scene, onModelLoad]);
+
+  return <primitive object={scene} scale={80} />; 
 }
 
 export default function ModelViewer({ modelPath }) {
-  return (
-    <div className="model-container">
-      <Suspense fallback={<div className="model-loading-text">Loading 3D model...</div>}>
-        <Canvas 
-  camera={{ 
-    position: [6, 6, 6], // Equal values create the isometric "corner" view
-    fov: 40,             // Slightly lower FOV makes it look more "flat" and technical
-    near: 0.1, 
-    far: 1000 
-  }}
->
-  <ambientLight intensity={0.7} />
-  <pointLight position={[10, 10, 10]} intensity={1} />
-  <Suspense fallback={null}>
-  {/* Move the entire group. Try 20 or 30 since 10 was too small */}
-  <group position={[0, 0, 0]}> 
-    <Center>
-      <Model url={modelPath} />
-    </Center>
-  </group>
+  const { isDark } = useContext(StyleContext); // Pull the theme state
+  const [isLoaded, setIsLoaded] = useState(false);
   
-  <OrbitControls 
-    autoRotate 
-    enableZoom={true}
-    minDistance={3} 
-    maxDistance={20} // Increased max distance to give you more breathing room
-    target={[0, -1, 0]}
-  />
-</Suspense>
-</Canvas>
-      </Suspense>
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: "400px 0px", 
+  });
+
+  return (
+    <div ref={ref} className="model-container" style={{ 
+      position: "relative", 
+      width: "100%", 
+      height: "400px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      background: "transparent"
+    }}>
+      
+      {/* 1. Dynamic Fallback Image based on theme */}
+      <img 
+        src={isDark ? darkFallback : lightFallback} 
+        alt="Project Preview" 
+        style={{ 
+          position: "absolute",
+          zIndex: 5,
+          maxWidth: "80%", 
+          maxHeight: "80%", 
+          objectFit: "contain",
+          transition: "opacity 0.6s ease-in-out", 
+          opacity: isLoaded ? 0 : 1, 
+          pointerEvents: "none"
+        }} 
+      />
+
+      {/* 2. The 3D Canvas */}
+      {inView && (
+        <Canvas 
+          dpr={[1, 1.5]} 
+          gl={{ 
+            antialias: false, 
+            powerPreference: "high-performance",
+            alpha: true 
+          }}
+          camera={{ position: [6, 6, 6], fov: 40 }}
+          style={{ 
+            position: "absolute", 
+            top: 0, 
+            left: 0, 
+            zIndex: 10, 
+            background: "transparent",
+            opacity: isLoaded ? 1 : 0,
+            transition: "opacity 0.4s ease-in"
+          }}
+        >
+          {/* We can also adjust the light intensity based on theme */}
+          <ambientLight intensity={isDark ? 0.4 : 0.8} />
+          <pointLight position={[10, 10, 10]} intensity={isDark ? 1.5 : 1} />
+          
+          <Suspense fallback={null}>
+            <group position={[0, 0, 0]}> 
+              <Center>
+                <Model url={modelPath} onModelLoad={() => setIsLoaded(true)} />
+              </Center>
+            </group>
+            <BakeShadows />
+            <Preload all />
+            <OrbitControls autoRotate enableZoom={true} minDistance={3} maxDistance={20} target={[0, -1, 0]} />
+          </Suspense>
+        </Canvas>
+      )}
     </div>
   );
 }

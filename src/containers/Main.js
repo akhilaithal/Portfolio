@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, Suspense, lazy} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
-import ManualProjects from "./manualProjects/ManualProjects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
@@ -21,6 +20,9 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+
+// Static imports must be above this. Lazy declarations should be right here.
+const ManualProjects = lazy(() => import("./manualProjects/ManualProjects"));
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -58,7 +60,12 @@ const Main = () => {
             <WorkExperience />
             <Education />
             <Projects />
-            <ManualProjects />
+            
+            {/* Suspense wraps the lazy-loaded 3D section */}
+            <Suspense fallback={null}>
+              <ManualProjects />
+            </Suspense>
+
             <StartupProject />
             <Achievement />
             <Podcast />

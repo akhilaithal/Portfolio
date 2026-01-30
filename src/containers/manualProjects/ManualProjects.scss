@@ -1,5 +1,30 @@
 @import "../../_globalColor";
 
+.main {
+  /* Achievements likely uses the template's default padding. 
+     We reset this to match exactly. */
+  padding-top: 10px; 
+  padding-bottom: 30px;
+}
+
+#myProjects.main {
+  display: block; 
+  width: 100%;
+}
+
+.my-projects-main-div {
+  width: 90%;
+  margin: 0 auto;
+  /* Reduced padding-top to remove that 'too much' feeling */
+  padding: 10px 10px; 
+}
+
+.my-projects-header {
+  text-align: left;
+  /* Ensure no top margin is pushing the heading down */
+  margin-top: 0px; 
+}
+
 .projects-heading {
   font-size: 56px;
   font-weight: 400;
@@ -10,22 +35,19 @@
 .projects-subtitle {
   text-transform: uppercase;
   margin: 0px;
-  margin-bottom: 50px;
-}
-
-.subTitle {
+  /* Reduced from 50px if it felt like too much space before the cards */
+  margin-bottom: 30px; 
   color: $subTitle;
 }
 
-/* Layout for the cards grid */
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.projects-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
 
-/* Media Query - Identical to Achievement */
+/* Media Queries (Same as Achievements) */
 @media (max-width: 1380px) {
   .projects-heading {
     font-size: 40px;
@@ -41,5 +63,9 @@
     font-size: 16px;
     line-height: normal;
     text-align: center;
+    margin-bottom: 20px;
+  }
+  .projects-cards-div {
+    justify-content: center; // Center cards on mobile only
   }
 }
