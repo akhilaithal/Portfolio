@@ -1,0 +1,45 @@
+@import "../../_globalColor";
+
+.projects-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.projects-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+/* Layout for the cards grid */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Media Query - Identical to Achievement */
+@media (max-width: 1380px) {
+  .projects-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .projects-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+}

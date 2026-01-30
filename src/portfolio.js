@@ -263,7 +263,15 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
+};
+
+// My Projects Section
+
+export const myProjects = {
+  title: "My Projects 🚀",
+  subtitle: "Hardware designs, 3D renders, and technical prototypes I've developed!",
+  display: true 
 };
 
 // Achievement Section

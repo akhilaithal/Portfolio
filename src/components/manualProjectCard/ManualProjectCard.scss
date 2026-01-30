@@ -1,0 +1,72 @@
+@import "../../_globalColor";
+
+.manual-card {
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+
+  &.dark-card {
+    background-color: #171c28; // Standard dark card background
+    border: 1px solid #2d3748; // Subtle dark border
+  }
+
+  /* The hover effect you liked from Achievements */
+  &:hover {
+    box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+    transform: translateY(-5px); // Optional: slight lift to emphasize the 3D nature
+  }
+}
+
+.dark-card.manual-card:hover {
+  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+}
+
+/* This is the "bounding box" around the 3D model */
+.manual-3d-display-area {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  
+  /* Applying the contrasting background you requested */
+  background-color: #f1f4f8; 
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  .dark-card & {
+    background-color: #0b0e14;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.manual-project-detail-div {
+  text-align: center; // Matches .certificate-detail-div
+}
+
+.manual-project-title {
+  color: $titleColor; // Uses global variable
+  font-size: 1.375rem; // Exact match to .card-title
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0; // Exact match to Achievement title position
+  
+  &.dark-mode {
+    color: #ffffff;
+  }
+}
+
+.manual-project-subtitle {
+  color: $cardSubtitle; // Uses global variable
+  font-size: 1.063rem; // Exact match to .card-subtitle
+  line-height: 1.5rem;
+  margin-top: 5px; // Subtle gap between title and description
+}
