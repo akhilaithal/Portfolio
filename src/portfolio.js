@@ -158,18 +158,20 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    /*
+    
      {
-      role: "Prototyping Engineer Intern",
+      role: "Prototype Engineer",
       company: "Bosch Sensortec GmbH",
       companylogo: require("./assets/images/Bosch_Logo.png"),
       date: "November 2025 – Present",
       //desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Led the end-to-end development of hardware prototypes, including PCB design and embedded firmware",
+        "Developed interactive platforms for MEMS sensors, facilitating real-time evaluations of sensing capabilities",
+        "Conducted technical demonstrations to communicate complex sensor principles effectively to stakeholders",
+        "Standardized demo builds for global showcases, ensuring consistency through Git-based version control"
       ]
-    }, */
+    },
     {
       role: "Research Assistant",
       company: "Institute of Robust Power Semiconductor Systems (ILH)",
@@ -271,7 +273,7 @@ const bigProjects = {
 export const myProjects = {
   title: "My Projects 🚀",
   subtitle:
-    "Hardware designs, 3D renders, and technical prototypes I've developed!",
+    "Some cool projects I've developed!",
   display: true
 };
 
