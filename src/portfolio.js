@@ -158,8 +158,7 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    
-     {
+    {
       role: "Prototype Engineer",
       company: "Bosch Sensortec GmbH",
       companylogo: require("./assets/images/Bosch_Logo.png"),
@@ -272,8 +271,7 @@ const bigProjects = {
 
 export const myProjects = {
   title: "My Projects 🚀",
-  subtitle:
-    "Some cool projects I've developed!",
+  subtitle: "Some cool projects I've developed!",
   display: true
 };
 
