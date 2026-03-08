@@ -76,7 +76,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Universität Stuttgart",
-      logo: require("./assets/images/unistuttgart_logo.png"),
+      logo: require("./assets/images/unistuttgart_logo.jpg"),
       subHeader: "Master of Science in Electrical Engineering",
       duration: "October 2022 - March 2025",
       grade: "Grade : 2.0",
